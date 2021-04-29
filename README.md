@@ -32,4 +32,7 @@ let group = cars.reduce((r, a) => {
  r[a.make] = [...r[a.make] || [], a];
  return r;
 }, {});
+
 console.log("group", group);
+
+lodash.groupBy(cars, 'make')
